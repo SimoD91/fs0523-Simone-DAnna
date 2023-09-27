@@ -1,0 +1,57 @@
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.logo {
+    display: block;
+    text-align: center;
+}
+.hr {
+    height: 4px;
+    background-color: orange
+}
+
+.titolino {
+    font-size: 0.6em;
+}
+
+.sottologo {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(244, 198, 112, 0.181);
+}
+
+.main {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sally {
+    color:grey
+}
+
+.featured {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: red;
+}
+
+
+h3 {
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+.tuttoasinistra {
+    text-align: left;
+}
+
+.footer {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
