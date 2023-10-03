@@ -62,10 +62,7 @@ console.log(x);
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/*
-const NAME = "Simone";
-NAME = "D'Anna";
-*/
+name = "D'Anna";
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -84,11 +81,7 @@ let name1 = "john";
 let name2 = "John";
 console.log(name1 == name2);
 
-function func() {
-  let str = "john";
-  let name1 = str.toLowerCase();
-  let name2 = str.toLowerCase();
-  console.log(name1 == name2);
-}
-
-func();
+console.log(
+  'name1 e name2 in lowercase sono uguali:',
+  name1.toLowerCase() === name2.toLowerCase()
+)
