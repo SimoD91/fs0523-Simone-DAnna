@@ -1,0 +1,537 @@
+/* Non ho eseguito alla lettera la consegna perchè mi sono accorto tardi che c'erano diversi obiettivi specifici che non ho
+   sinceramente letto nelle slide, credevo fosse un esercizio più libero quindi scusa se ad esempio certe sezioni non sono affiancate
+   come richiesto dalla consegna
+    */
+
+@media screen and (max-width: 575px) {
+    header {
+        font-size: 2rem;
+    }
+    header img {
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+    }
+    header p {
+        font-size: 4rem;
+    }
+
+    nav li {
+        font-size: 3rem;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    p {
+      font-size: 2rem;
+      text-align:center;
+    }
+    ul, li {
+    font-size: 1.7rem;
+     }
+    h2 {
+        font-size: 2.8rem;
+        text-align:center;
+        font-weight:bold;
+    }
+
+    table {
+        font-size: 1.6rem;
+        height: 100%;
+    }
+    table caption {
+        font-size: 3rem;
+    }
+    table td {
+        font-weight:bold;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    form {
+        text-align:center;
+    }
+    form input {
+        font-size: 1.8rem;
+        text-align:center;
+    }
+
+    form button {
+        margin-top: 10px;
+        font-size: 2.3rem;
+    }
+
+    aside h2, section h2 {
+        font-size: 2.8rem;
+    }
+
+    aside a {
+        display:flex;
+        flex-direction:column;
+        font-size: 2rem;
+        text-align:center;
+    }
+
+    footer p, footer a {
+        font-size: 2.3rem;
+        text-align:center;
+    }
+    
+    address {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+
+    header {
+        font-size: 2rem;
+    }
+    header img {
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+    }
+    header p {
+        font-size: 4rem;
+    }
+
+    nav li {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 auto;
+      }
+    
+      p {
+        font-size: 2rem;
+        text-align:center;
+      }
+
+      ul, li {
+      font-size: 1.7rem;
+       }
+
+      h2 {
+          font-size: 2.8rem;
+          text-align:center;
+          font-weight:bold;
+      }
+  
+      table {
+          font-size: 1.6rem;
+          height: 100%;
+          margin: auto;
+          text-align:center;
+          margin-bottom: 30px;
+      }
+      table caption {
+          font-size: 3rem;
+      }
+      table td {
+          font-weight:bold;
+      }
+  
+      iframe {
+          height: 300px;
+      }
+      form {
+        text-align:center;
+    }
+    fieldset {
+        display:flex;
+        flex-direction:column;
+    }
+
+    form input {
+        font-size: 1.8rem;
+        text-align:center;
+    }
+
+    form button {
+        margin-top: 10px;
+        font-size: 2.3rem;
+    }
+
+    aside h2, section h2 {
+        font-size: 2.8rem;
+    }
+
+    aside a {
+        display:flex;
+        flex-direction:column;
+        font-size: 2rem;
+        text-align:center;
+    }
+
+    footer p, footer a {
+        font-size: 2.3rem;
+        text-align:center;
+    }
+    
+    address {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    header {
+        font-size: 1rem;
+    }
+
+    header img {
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+    }
+
+    header p {
+        font-size: 3rem;
+    }
+
+    nav li {
+        font-size: 2rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    p {
+      font-size: 1.3rem;
+      text-align:center;
+      margin-left: 0 auto;
+      margin-right: 0 auto;
+    }
+
+    article ul, article li {
+        font-size: 1.6rem;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        font-style:italic;
+        margin-left: 2px;
+        text-decoration:underline;
+     }
+
+    h2 {
+        font-size: 2.8rem;
+        text-align:center;
+        font-weight:bold;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+    }
+
+    table {
+        font-size: 1.6rem;
+        height: 100%;
+        margin-left: auto;        
+        margin-right: auto;
+        text-align:center;
+        margin-bottom: 35px;
+    }
+    table caption {
+        font-size: 3rem;
+    }
+    table td {
+        font-weight:bold;
+    }
+
+    iframe {
+        height: 400px;
+    }
+    form {
+      text-align:center;
+      height: 50px;
+      margin-bottom: 50px;
+  }
+  fieldset {
+      display:flex;
+      flex-direction:column;
+  }
+
+  form input {
+      font-size: 1.8rem;
+      text-align:center;
+      height: 50px;
+  }
+
+  form button {
+      margin-top: 10px;
+      font-size: 2.3rem;
+      height: 50px;
+  }
+
+  aside h2, section h2 {
+      font-size: 2.8rem;
+  }
+
+  aside a {
+      display:flex;
+      flex-direction:column;
+      font-size: 2rem;
+      text-align:center;
+  }
+
+  footer p, footer a {
+      font-size: 2.3rem;
+      text-align:center;
+  }
+  
+  address {
+      font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+header {
+    font-size: 1rem;
+}
+
+header img {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+}
+
+header p {
+    font-size: 3rem;
+}
+
+nav li {
+    font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.8rem;
+  text-align:center;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+
+article ul, article li {
+    font-size: 1.6rem;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-style:italic;
+    margin-left: 2px;
+    text-decoration:underline;
+ }
+
+h2 {
+    font-size: 2.8rem;
+    text-align:center;
+    font-weight:bold;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+table {
+    font-size: 1.6rem;
+    height: 100%;
+    margin-left: auto;        
+    margin-right: auto;
+    text-align:center;
+    margin-bottom: 35px;
+}
+table caption {
+    font-size: 3rem;
+}
+table td {
+    font-weight:bold;
+}
+
+iframe {
+    height: 400px;
+}
+form {
+  text-align:center;
+  height: 50px;
+  margin-bottom: 50px;
+}
+fieldset {
+  display:flex;
+  flex-direction:column;
+}
+
+form input {
+  font-size: 1.8rem;
+  text-align:center;
+  height: 50px;
+}
+
+form button {
+  margin-top: 10px;
+  font-size: 2.3rem;
+  height: 50px;
+}
+
+aside h2, section h2 {
+  font-size: 2.8rem;
+}
+
+aside a {
+  display:flex;
+  flex-direction:column;
+  font-size: 2rem;
+  text-align:center;
+}
+
+footer p, footer a {
+  font-size: 2.3rem;
+  text-align:center;
+}
+
+address {
+  font-size: 1.6rem;
+  display:flex;
+  flex-direction:column;
+}
+}
+
+@media print {
+    header {
+        font-size: 1rem;
+    }
+    
+    header img {
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+    }
+    
+    header p {
+        font-size: 3rem;
+        color:black;
+    }
+    
+    nav li {
+        font-size: 2rem;
+        color:black;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
+    p {
+      font-size: 1.8rem;
+      text-align:center;
+      margin-left: 0 auto;
+      margin-right: 0 auto;
+    }
+    
+    article ul, article li {
+        font-size: 1.6rem;
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        font-style:italic;
+        margin-left: 2px;
+        text-decoration:underline;
+     }
+    
+    h2 {
+        font-size: 2.8rem;
+        text-align:center;
+        font-weight:bold;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+    }
+    
+    table {
+        margin-top: 400px;
+        font-size: 1.6rem;
+        height: 100%;   
+        margin-left: auto;  
+        margin-right: auto;
+        text-align:center;
+    }
+    table caption {
+        font-size: 3rem;
+    }
+    table td {
+        font-weight:bold;
+    }
+    
+    iframe {
+        height: 400px;
+        display:none;
+    }
+    form {
+      text-align:center;
+      height: 50px;
+      margin-bottom: 50px;
+    }
+    fieldset {
+      display:flex;
+      flex-direction:column;
+    }
+    
+    form input {
+      font-size: 1.8rem;
+      text-align:center;
+      height: 50px;
+    }
+    
+    form button {
+      margin-top: 10px;
+      font-size: 2.3rem;
+      height: 50px;
+    }
+    
+    aside h2, section h2 {
+      font-size: 2.8rem;
+    }
+    
+    aside a {
+      display:flex;
+      flex-direction:column;
+      font-size: 2rem;
+      text-align:center;
+    }
+    
+    footer p, footer a {
+      font-size: 2.3rem;
+      text-align:center;
+    }
+    
+    address {
+      font-size: 1.6rem;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header, main, article, footer {
+        box-sizing: none;
+        border: none;
+        box-shadow: none;
+        color:black;
+    }
+
+    header, footer, section, aside {
+        display: none;
+    }
+}
