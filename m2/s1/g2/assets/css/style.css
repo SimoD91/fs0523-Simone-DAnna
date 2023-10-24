@@ -40,6 +40,52 @@ header {
   .imgLeft{
     float: left;
   }
+  .btcalend{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btcalend:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+  .btsoc{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 90px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btsoc:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -49,6 +95,7 @@ header {
   .imgLeft{
     float: left;
   }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -129,6 +176,52 @@ main {
     bottom: 37px;
     opacity: 0.6;
   }
+  .btcalend{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 90px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btcalend:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+  .btsoc{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btsoc:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
 }
 
 section {
@@ -180,6 +273,13 @@ h1 + p {
   ol {
     font-size: 1.4rem;
   }
+section {
+  background-color: #e3e3e3;
+  padding: 1.5em 1em;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 1;
+}
 
   h2 {
     font-size: 1.8rem;
@@ -188,11 +288,93 @@ h1 + p {
   .imgLeft{
     float: left;
   }
+  .btcalend{
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-right: 50px;
+    margin-right: -5px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btcalend:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px;
+  }
+  .btsoc{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    padding-right: 50px;
+    margin-right: -5px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btsoc:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+  .btt{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-right: 50px;
+    margin-right: -5px;
+    box-shadow: 1px 1px #ffffffb8;
+    z-index: 2;
+  }
+    
+  .btt:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#a02571
+  }
 }
 
 @media screen and (min-width: 500px) {
   h1 {
     font-size: 3rem;
+  }
+  section {
+    background-color: #e3e3e3;
+    padding: 1.5em 1em;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 1;
   }
 
   p,
@@ -207,6 +389,79 @@ h1 + p {
   }
   .imgLeft{
     float: left;
+  }
+  .btcalend{
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-right: -5px;
+    z-index: 2;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btcalend:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+  .btsoc{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 2;
+    padding-right: 50px;
+    margin-right: -5px;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+    
+  .btsoc:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#567ed384;
+    box-shadow: 1px 1px #ffffffb8;
+  }
+  .btt{
+    display: block;
+    width: 30px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    background-color: #ffffff4b;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding-right: 50px;
+    margin-right: -5px;
+    box-shadow: 1px 1px #ffffffb8;
+    z-index: 2;
+  }
+    
+  .btt:hover{
+    opacity: 1;
+    cursor:pointer;
+    background-color:#a025716d
   }
 }
 
@@ -290,6 +545,14 @@ table {
   table {
     margin: 0 auto 2em;
   }
+  section {
+    background-color: #e3e3e3;
+    padding: 1.5em 1em;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 1;
+  }
+  
 }
 @media screen and (min-width: 700px) {
   table {
@@ -442,9 +705,9 @@ footer a {
     display: none;
   }
 }
-#btt{
+.btt{
   display: block;
-  width: 30px;
+  width: 60px;
   height: 60px;
   font-size: 2rem;
   text-align: center;
@@ -452,9 +715,12 @@ footer a {
   right: 10px;
   bottom: 10px;
   opacity: 0.5;
-  background-color: #ffffff;
+  background-color: #ffffff4b;
   border: 2px solid white;
   border-radius: 8px;
+  padding-right: 30px;
+  box-shadow: 1px 1px #ffffffb8;
+  z-index: 2;
 }
 
 svg{
@@ -463,49 +729,67 @@ svg{
   top: 15px;
 }
   
-#btt:hover{
+.btt:hover{
   opacity: 1;
   cursor:pointer;
-  background-color:#a02571
-}
-#btcalend{
-  display: block;
-  width: 30px;
-  height: 60px;
-  font-size: 2rem;
-  text-align: center;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  opacity: 0.5;
-  background-color: #ffffff;
-  border: 2px solid white;
-  border-radius: 8px;
-}
-  
-#btcalend:hover{
-  opacity: 1;
-  cursor:pointer;
-  background-color:#567ed3;
+  background-color:#a025716d
 }
 
-#btsoc{
+.btcalend{
   display: block;
-  width: 30px;
+  width: 60px;
   height: 60px;
   font-size: 2rem;
   text-align: center;
   position: fixed;
   right: 10px;
-  top: 90px;
+  bottom: 90px;
   opacity: 0.5;
-  background-color: #ffffff;
+  background-color: #ffffff4b;
   border: 2px solid white;
   border-radius: 8px;
+  padding-right: 30px;
+  box-shadow: 1px 1px #ffffffb8;
 }
   
-#btsoc:hover{
+.btcalend:hover{
   opacity: 1;
   cursor:pointer;
-  background-color:#567ed3;
+  background-color:#567ed384;
+  box-shadow: 1px 1px #ffffffb8;
+}
+
+.btsoc{
+  display: block;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  position: fixed;
+  right: 10px;
+  bottom: 180px;
+  opacity: 0.5;
+  background-color: #ffffff4b;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding-right: 30px;
+  box-shadow: 1px 1px #ffffffb8;
+}
+  
+.btsoc:hover{
+  opacity: 1;
+  cursor:pointer;
+  background-color:#567ed384;
+  box-shadow: 1px 1px #ffffffb8;
+}
+
+.fasfa{
+  position:relative;
+}
+
+i.fas.fa-tag{
+  position:absolute;
+  right:0px;
+  top:0px;
+
 }
