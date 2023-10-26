@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --giallo: #fefece;
+    --verde: #ccfece;
+    --viola: #cacafa;
+}
+
+body{
+    background-color: grey;
+}
+
+#postit{
+    width: 260px;
+    height: 260px;
+    margin-top: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    box-shadow: 2px 3px 15px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+#postit p:nth-child(1){
+    padding-top: 70px;
+    font-weight:bold;
+}
+
+#postit p:nth-child(2){
+    margin-top: 25px;
+    font-size: 2rem;
+}
+
+#board{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    --gap: 35px;
+    gap: var(--gap);
+    --margin: 0px 50px;
+    margin: var(--margin);
+    flex-basis:calc(100% / 4 - var(--gap) - var(--margin));
+}
+
+.post1{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--giallo) 0%, var(--giallo) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(-5deg);
+}
+
+.post1:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post2{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(5deg);
+}
+
+.post2:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post3{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--viola) 0%, var(--viola) 75%, #8b8c9b 90%, #8b8c9b 100%);
+    transform: rotate(-8deg);
+}
+
+.post3:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post4{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(9deg);
+}
+
+.post4:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post5{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--giallo) 0%, var(--giallo) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(-5deg);
+}
+
+.post5:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post6{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--viola) 0%, var(--viola) 75%, #8b8c9b 90%, #8b8c9b 100%);
+    transform: rotate(-8deg);
+}
+
+.post6:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post7{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--giallo) 0%, var(--giallo) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(-5deg);
+}
+
+.post7:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.post8{
+    flex-grow: 1;
+    background-image: linear-gradient(var(--verde) 0%, var(--verde) 75%, #bdbda3 90%, #bdbda3 100%);
+    transform: rotate(5deg);
+}
+
+.post8:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+}
