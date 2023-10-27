@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif;
+*/
+
+/*
+Oggi ho completamente sbagliato nella gestione dei tempi, ho fatto il meglio che ho potuto senza fermarmi mai.
+*/
+
+:root {
+    --giallo: #ffc017;
+    --grigio: #191919;
+    --verde: #1a8917;
+}
+
+.svg {
+    width: 37%;
+    height: 34%;
+    margin-left: 100px;
+}
+
+header {
+    background-color:#ffc017;
+    height: 75px;
+    border-bottom: 1px solid #191919;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+/*header:active {
+    background-color:#fff;
+    position: sticky;
+}
+*/
+
+.logo{
+    position:absolute;
+    padding-top: 26px;
+}
+
+nav, #container1, .container2 {
+    margin: 0 164px;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #191919;
+}
+
+li {
+    margin-top: 30px;
+    margin-right: 2px;
+}
+
+.button {
+    background-color: #191919;
+    position:relative;
+    top: -12px;
+    text-align:center;
+    width: 100px;
+    height: 25px;
+    border: 2px solid #191919;
+    padding-top: 10px;
+    border-radius: 80px;
+}
+
+#button2 {
+    background-color:#1a8917;
+    color:#fff;
+    position:relative;
+    top: -12px;
+    text-align:center;
+    width: 100px;
+    height: 25px;
+    border: 2px solid #191919;
+    padding-top: 10px;
+    border-radius: 80px;
+    display: none;
+}
+
+.button a {
+    color: white;
+}
+
+.hero {
+    background-color:#ffc017;
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid #191919;
+}
+
+.title {
+    margin-left: 160px;
+    margin-top: 90px;
+}
+
+.title h1 {
+    font-family: 'Spectral', serif;
+    font-size: 6.8rem;
+    font-weight: 400;
+    color: #191919;
+}
+
+.title p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 1.5rem;
+    width: 65%;
+    margin-top: 20px;
+}
+
+.buttonstart {
+    background-color: #191919;
+    margin-top: 50px;
+    height: 30px;
+    width: 200px;
+    border: 2px solid #191919;
+    padding-top: 7px;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2px;
+
+}
+
+.buttonstart a {
+    color: white;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.firstrow {
+    display:flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.secondrow{
+    display:flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.trending h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #191919;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.numbers {
+    font-family: 'Roboto', sans-serif;
+    color: #19191910;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.authors{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    color:grey;
+    margin-top: 15px;
+}
+
+.trending img{
+    border-radius: 100%;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.upper-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lower-part {
+    margin-left: 55px;
+}
+
+.part02 {
+    margin-left: 225px;
+}
+
+.part02 img{
+    width: 8%;
+}
+
+.part02 .authors {
+    margin-left: 10px;
+}
+
+.part03{
+    width: 36%;
+    margin-left: 190px;
+}
+
+.part03 img{
+    width: 7%;
+}
+
+.part03 .authors {
+    margin-left: 10px;
+}
+
+.part04 {
+    width: 23%;
+}
+
+.part04 img{
+    width: 8%;
+}
+
+.part04 .authors {
+    margin-left: 10px;
+}
+
+.part05{
+
+    margin-left: 170px;
+}
+.part05 img{
+    width: 5%;
+    margin-left: 20px;
+}
+
+.part05 .authors {
+    margin-left: 10px;
+}
+
+.part06 img{
+    width: 8%;
+}
+
+.part06 .authors {
+    margin-left: 10px;
+}
+
+main {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+    margin-bottom: 50px;
+}
+
+.container2{
+    display:flex;
+    flex-direction: row;
+}
+
+section{
+    width: 50%
+}
+
+
+.container2 .authors{
+
+    margin-top: 20px;
+}
+
+.container3 {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.aside {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.aside p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(128, 128, 128, 0.192);
+    padding: 5px;
+}
+
+.aside a{
+    color: grey;
+}
+
+aside h2, .article h2 {
+    font-weight: bold;
+}
+
+.article {
+    width: 60%;
+}
+
+.article .authors {
+    margin-left: 10px;
+}
+
+footer{
+    margin-top: -30px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+footer a{
+    color: grey;
+}
