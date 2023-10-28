@@ -1,18 +1,17 @@
+/*
+Ho fissato la nav-bar per farla restare a schermo durante lo scrolling della pagina e stessa cosa con la sezione aside in basso a destra,
+ho fatto gli script per il cambio colore della nav-bar e del pulsante ed il popup per gli start button dell'hero section e della nav-bar 
+(non è proprio identico al sito ma ho fatto del mio meglio).
+Gli altri popup non sono riuscito a terminarli (ho perso ore nel tentativo di fare lo script delle M).
+Alla fine ho provato a riordinare un pò il codice ma è obiettivamente un delirio
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Spectral', serif;
-*/
-
-/*
-Oggi ho completamente sbagliato nella gestione dei tempi, ho fatto il meglio che ho potuto senza fermarmi mai.
-*/
-
 :root {
-    --giallo: #ffc017;
-    --grigio: #191919;
-    --verde: #1a8917;
+    color: #ffc017;
+    color: #191919;
+    color: #1a8917;
 }
 
 .svg {
@@ -27,17 +26,10 @@ header {
     border-bottom: 1px solid #191919;
     position: sticky;
     top: 0;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
+    z-index: 1020;
 }
 
-/*header:active {
-    background-color:#fff;
-    position: sticky;
-}
-*/
-
-.logo{
+.logo {
     position:absolute;
     padding-top: 26px;
 }
@@ -53,8 +45,8 @@ ul {
     justify-content: flex-end;
     gap: 20px;
     font-family: 'Roboto', sans-serif;
+    font-weight:400;
     font-size: 0.9rem;
-    font-weight: 400;
 }
 
 a {
@@ -67,7 +59,7 @@ li {
     margin-right: 2px;
 }
 
-.button {
+#button {
     background-color: #191919;
     position:relative;
     top: -12px;
@@ -79,21 +71,7 @@ li {
     border-radius: 80px;
 }
 
-#button2 {
-    background-color:#1a8917;
-    color:#fff;
-    position:relative;
-    top: -12px;
-    text-align:center;
-    width: 100px;
-    height: 25px;
-    border: 2px solid #191919;
-    padding-top: 10px;
-    border-radius: 80px;
-    display: none;
-}
-
-.button a {
+a #button {
     color: white;
 }
 
@@ -110,10 +88,10 @@ li {
 }
 
 .title h1 {
-    font-family: 'Spectral', serif;
-    font-size: 6.8rem;
+    font-family: Georgia,"Times New Roman", Times, serif;
+    font-size: 6.4rem;
     font-weight: 400;
-    color: #191919;
+    color: black;
 }
 
 .title p {
@@ -138,28 +116,39 @@ li {
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
     margin-left: 2px;
-
 }
 
-.buttonstart a {
+.buttonstart:hover {
+    background-color: black;
+}
+
+a .buttonstart {
     color: white;
+}
+
+.svg-trend {
+    position: relative;
+    top: 50px;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
-    margin-top: 45px;
+    margin-top: 28px;
     margin-bottom: 10px;
+    margin-left: 40px;
+    color: #191919;
 }
 
 .firstrow {
     display:flex;
     flex-direction: row;
     gap: 5%;
+    margin-top: 20px;
 }
 
-.secondrow{
+.secondrow {
     display:flex;
     flex-direction: row;
     gap: 5%;
@@ -183,7 +172,7 @@ h2 {
     font-weight: bold;
 }
 
-.authors{
+.authors {
     font-family: 'Roboto', sans-serif;
     color: #191919;
     font-size: 0.7rem;
@@ -198,13 +187,23 @@ h2 {
     margin-top: 15px;
 }
 
-.trending img{
+.trending img {
     border-radius: 100%;
     width: 40%;
     margin-left: 20px;
 }
 
-.upper-part{
+.star {
+    position: relative;
+    left: 80px;
+    top: -15px;
+}
+
+#star04 {
+    width: 11%;
+}
+
+.upper-part {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -218,7 +217,7 @@ h2 {
     margin-left: 225px;
 }
 
-.part02 img{
+.part02 img {
     width: 8%;
 }
 
@@ -226,12 +225,12 @@ h2 {
     margin-left: 10px;
 }
 
-.part03{
+.part03 {
     width: 36%;
     margin-left: 190px;
 }
 
-.part03 img{
+.part03 img {
     width: 7%;
 }
 
@@ -243,7 +242,7 @@ h2 {
     width: 23%;
 }
 
-.part04 img{
+.part04 img {
     width: 8%;
 }
 
@@ -251,11 +250,11 @@ h2 {
     margin-left: 10px;
 }
 
-.part05{
+.part05 {
 
     margin-left: 170px;
 }
-.part05 img{
+.part05 img {
     width: 5%;
     margin-left: 20px;
 }
@@ -264,7 +263,7 @@ h2 {
     margin-left: 10px;
 }
 
-.part06 img{
+.part06 img {
     width: 8%;
 }
 
@@ -277,19 +276,152 @@ main {
     margin-bottom: 50px;
 }
 
-.container2{
+.container2 {
     display:flex;
     flex-direction: row;
 }
 
-section{
-    width: 50%
+section {
+    width: 50%;
 }
 
 
-.container2 .authors{
-
+.container2 .authors {
     margin-top: 20px;
+}
+
+.article {
+    width: 60%;
+    margin-bottom: -100px;
+}
+
+.article .date {
+    margin-top: 25px;
+}
+
+#last-author {
+    margin-bottom: -10px
+}
+
+#last-h2 {
+    margin-top: 20px;
+}
+
+.article .authors {
+    font-size: 0.7rem;
+}
+
+.authors img {
+    width: 6%;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.img-article {
+    position: relative;
+    left: 300px;
+    top: -139px;
+    width: 60%;
+}
+
+.img-article04 {
+    position: relative;
+    left: 325px;
+    top: -125px;
+    width: 60%;
+}
+
+.img-article07 {
+    position: relative;
+    left: 324px;
+    top: -125px;
+    width: 60%;
+}
+
+.article h2 {
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 0;
+}
+
+.article p {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    font-size: 0.8rem;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.star-article {
+    position: relative;
+    left: 155px;
+    bottom: 140px;
+}
+
+.star-article02 {
+    position: relative;
+    left: 158px;
+    bottom: 140px;
+}
+
+.star-article03 {
+    position: relative;
+    left: 242px;
+    bottom: 140px;
+}
+
+.star-article05 {
+    position: relative;
+    left: 158px;
+    bottom: 141px;
+}
+
+.star-article06 {
+    position: relative;
+    left: 225px;
+    bottom: 140px;
+}
+
+.bookmark {
+    position: absolute;
+    left: 450px;
+    bottom: -420px;
+}
+
+.bookmark02 {
+    position: absolute;
+    left: 450px;
+    bottom: -627px;
+}
+
+.bookmark03 {
+    position: absolute;
+    left: 450px;
+    bottom: -837px;
+}
+
+.bookmark04 {
+    position: absolute;
+    left: 450px;
+    bottom: -1041px;
+}
+
+.bookmark05 {
+    position: absolute;
+    left: 450px;
+    bottom: -1251px;
+}
+
+.bookmark06 {
+    position: absolute;
+    left: 450px;
+    bottom: -1457px;
+}
+
+.bookmark07 {
+    position: absolute;
+    left: 450px;
+    bottom: -1705px;
 }
 
 .container3 {
@@ -298,49 +430,162 @@ section{
     align-items: end;
 }
 
-
-.aside {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5%;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
-    margin-bottom: 40px;
-    margin-top: 30px;
+aside {
+    position: sticky;
+    top: 55px;
 }
 
-.aside p {
+footer {
+    position: sticky;
+    top: 240px;
+}
+
+
+.aside1, .aside2 {
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.aside2 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+    margin-top: -50px;
+}
+
+.aside1 p, .aside2 p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 2px solid rgba(128, 128, 128, 0.192);
-    padding: 5px;
+    padding: 10px;
 }
 
-.aside a{
+.aside1 a, .aside2 a {
     color: grey;
 }
 
 aside h2, .article h2 {
     font-weight: bold;
+    font-size: 1.1rem;
+    color: #191919;
 }
 
-.article {
-    width: 60%;
+aside h2 {
+    margin-left: 0px;
+    font-size: 0.8rem;
+
 }
 
-.article .authors {
-    margin-left: 10px;
-}
-
-footer{
+footer {
     margin-top: -30px;
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
+    font-size: 0.8rem;
 }
 
-footer a{
+footer a {
     color: grey;
+}
+
+.ul-firstpart, .ul-secondpart {
+    display:flex;
+    position:relative;
+    left: -180px;
+}
+
+.ul-secondpart {
+    margin-top: -10px;
+}
+
+#popup {
+    height: 500px;
+    width: 60%;
+    box-shadow: 5px 3px 15px #000;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    left: calc(50vh - 100px);
+    top: 100px;
+    text-align: center;
+    }
+
+#popup h2 {
+    font-size: 1.5rem;
+    font-family: Georgia,"Times New Roman", Times, serif;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 120px;
+}
+
+#popup a {
+    position:relative;
+    list-style: none;
+    left: 370px;
+}
+
+#button-pop {
+    background-color: rgba(25, 25, 25, 0.079)1919;
+    margin-top: 5px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #000000;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+#popup p {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin-left: 30px;
+}
+
+#popup span {
+    color: #1a8917;
+    font-weight: bold;
+    position: relative;
+    right: 350px;
+}
+
+.sign-up u {
+    position:relative;
+    right: 370px;
+}
+    
+#popup-Bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+    
+.hidden {
+    display:none;
+}
+    
+.close-popup {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 3rem;
+    width: 30px;
+    height: 30px;
+    line-height: 15px;
+    text-align: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: grey;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }

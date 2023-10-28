@@ -1,22 +1,38 @@
-/*
-let navi = document.querySelector('header');
-let button2 = document.querySelector('#button2');
-let button = document.querySelector('.button');
 
-window.onscroll = () => {
-    if (window.scrollY > 300) {
-        navi.classList.add('header:active');
-        button.style.display = 'none';
-        button2.style.display = 'block';
+//<---- Script per cambio colore nav-bar e pulsante nav-bar --->\\
+
+let button = document.getElementById("button");
+let navi = document.querySelector("header");
+
+window.addEventListener("scroll", function() {
+
+    if (window.scrollY > 360) {
+        button.style.backgroundColor = "#1a8917";
+        button.style.border = "2px solid #1a8917";
+        button.style.transition = "0.6s";
+        navi.style.backgroundColor = "white";
+        navi.style.transition = "0.6s";
     } else {
-        navi.classList.remove('header:active');
-        button.style.display = 'block';
-        button2.style.display = 'none';
+        button.style.backgroundColor = "#191919";
+        button.style.border = "2px solid #191919";
+        navi.style.backgroundColor = "#ffc017";
     }
-};
+});
 
-Ho provato a cambiare colore alla navbar durante lo scroll con mille varianti ma non me lo prende, cambia solo colore dello sfondo dopo averci
-cliccato, sicuramente a causa di :active che non serve al mio scopo ma ormai l'ho capito troppo tardi,
-e mi prendeva 2 pulsanti per poi farmeli scomparire una volta scrollato invece di mostrarne uno per volta, ho disattivato tutto perchè
-erano sovrapposti e mi rimane poco tempo, se vedrai un button2 nel css mai utilizzato è per queste prove che ho fatto
-*/
+//<---- Script per il popup dopo click pulsante sezione hero e nav-bar--->\\
+
+let apriPop = document.querySelector(".buttonstart");
+let apriPop2 = document.getElementById("button");
+let chiudiPop = document.querySelector(".close-popup");
+let popup = document.querySelector("#popup");
+let popupBg = document.querySelector("#popup-Bg");
+
+function togglePopup(){
+    popup.classList.toggle("hidden");
+	popupBg.classList.toggle("hidden");
+}
+
+apriPop2.addEventListener("click", togglePopup)
+apriPop.addEventListener("click", togglePopup)
+chiudiPop.addEventListener("click", togglePopup)
+popupBg.addEventListener("click", togglePopup)
