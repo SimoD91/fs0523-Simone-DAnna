@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <h1 class="text-center">Pratica con il Grid System</h1>
+    <h1 class="text-center mb-3">Pratica con il Grid System</h1>
     <h2 class="text-center mt-3">Esercizio 1</h2>
     <div class="container">
       <div class="row">
@@ -21,10 +21,10 @@
 
     <h2 class="text-center mt-3">Esercizio 2</h2>
       <div class="row">
-        <div class="col-sm-4 col-md-4 p-3 bg-warning text-dark border border-dark">Prima colonna</div>
-        <div class="col-sm-4 col-md-4 p-3 bg-warning text-dark border border-dark">Seconda colonna</div>
-        <div class="col-sm-4 col-md-4 p-3 bg-warning text-dark border border-dark">Terza colonna</div>
-    </div>
+        <div class="col-md-4 bg-warning text-dark border border-dark p-3">Prima colonna</div>
+        <div class="col-md-4 bg-warning text-dark border border-dark p-3">Seconda colonna</div>
+        <div class="col-md-4 bg-warning text-dark border border-dark p-3">Terza colonna</div>
+      </div>
 
     <h2 class="text-center mt-3">Esercizio 3</h2>
     <div class="row">
@@ -50,16 +50,25 @@
 
   <h2 class="text-center mt-3">Esercizio 4</h2>
   <div class="row">
-    <div class="col-3 p-3 bg-danger text-white border border-dark">Prima colonna</div>
-    <div class="col-6 p-3 bg-danger text-white border border-dark">Seconda colonna</div>
-    <div class="col-3 p-3 bg-danger text-white border border-dark">Terza colonna</div>
+    <div class="col-md-4 p-3 bg-danger text-white border border-dark">Prima colonna</div>
+    <div class="col-md-4 p-3 bg-danger text-white border border-dark">Seconda colonna</div>
+    <div class="col-md-4 p-3 bg-danger text-white border border-dark">Terza colonna</div>
     </div>
 
     <h2 class="text-center mt-3">Esercizio 5</h2>
-      <div class="row bg-info border border-dark">
-        <div class="col-4 p-3 bg-secondary text-white border border-dark mt-3 mb-3">Colonna annidata</div>
-        <div class="col-4 p-3 bg-secondary text-white border border-dark mt-3 mb-3">Colonna annidata</div>
-        <div class="col-4 bg-info border border-dark"></div>
+    <div class="row">
+      <div class="col-md-8 bg-info text-white border border-dark p-3">
+        <div class="row">
+          <div class="col-md-6 bg-secondary text-white border border-dark p-3">Colonna annidata</div>
+          <div class="col-md-6 bg-secondary text-white border border-dark p-3">Colonna annidata</div>
         </div>
+      </div>
+      <div class="col-md-4 bg-info text-white border border-dark p-3"></div>
+    </div>
+
+    <h2 class="text-center mt-3">Esercizio 6</h2>
+    <div class="row">
+      <div class="col-md-3 bg-dark text-white p-3">Prima colonna</div>
+      <div class="col-md-3 bg-dark text-white p-3 offset-md-3">Seconda colonna shiftata</div>
   </body>
 </html>
