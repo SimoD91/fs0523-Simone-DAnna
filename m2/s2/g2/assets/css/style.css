@@ -5,3 +5,13 @@ section img {
 .p-title {
     font-size: 1.7rem;
 }
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+span {
+    font-size: 1rem;
+    vertical-align:middle;
+    padding-top: -5px;
+}
