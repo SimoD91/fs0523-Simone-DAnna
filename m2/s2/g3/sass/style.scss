@@ -1,0 +1,15 @@
+@import "colori";
+@import "font";
+
+header {
+    background-color: $viola;
+    border-bottom: $bordo;
+}
+
+span {
+    font-weight: $big-font;
+}
+
+.nav-link {
+    color: $bianco;
+}
