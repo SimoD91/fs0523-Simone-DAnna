@@ -1,0 +1,185 @@
+/* ---> Avevo aggiunto questa animazione perchè la trovavo carina esteticamente
+        ma per fedeltà al mockup originale ho deciso di disattivarla 
+        (ho lasciato solo quella per le icone avatar e kids) <---
+
+.media:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 2;
+}
+*/
+
+body{
+    background-color: #1A1A1A
+}
+
+.logo {
+    width: 110px;
+}
+
+#navbar {
+    margin-top: -5px;
+}
+
+#nav-link {
+    color: rgba(255, 255, 255, 0.778);
+}
+
+#nav-link:hover, h1, h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.avatar, .kids {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.kids:hover, .avatar:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 1.9rem;
+    width: 20%;
+}
+
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.bi {
+    color:white;
+    margin: 15px;
+}
+
+.media {
+    width: 208px;
+    box-shadow: 2px 3px 15px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.main {
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
+
+.dropdown {
+    padding-top: 5px;
+}
+
+.dropdown-item:active {
+    background-color: rgba(255, 255, 255, 0.625);
+}
+
+.cont-title {
+    margin-bottom: 17px;
+}
+
+.py-5, .nav-link, p {
+    font-size: 0.7rem;
+}
+
+.nav-link:hover, footer .bi, .py-5, .nav-link, p {
+    color:rgba(255, 255, 255, 0.625);
+}
+
+.nav-link:focus {
+    color:rgba(255, 255, 255, 0.625);
+}
+
+.footer, .logos, .address {
+    width: 60%;
+}
+
+footer .bi {
+    margin-left: 0;
+    font-size: 20px;
+}
+
+footer .bi:hover {
+    color: white;
+}
+
+.last {
+    margin-bottom: 150px;
+}
+
+.btn {
+    font-size: 0.7rem;
+    color:rgba(255, 255, 255, 0.625);
+}
+
+.dropdown button, .dropdown-menu {
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+svg {
+    border: 1px solid rgba(255, 255, 255, 0.625);
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+
+.svg {
+    justify-content: end;
+    padding-right: 0;
+}
+
+.svg .bi {
+    color:rgba(255, 255, 255, 0.625);
+}
+
+.svg .bi:hover {
+    color:white;
+    cursor:pointer;
+}
+
+/* ---> Responsive fixes <--- */
+
+@media screen and (max-width: 768px){
+    .svg .bi {
+        display: none;
+    }
+    .main {
+        display:flex;
+        justify-content: center;
+    }
+
+    .row-main {
+        margin-left: 100px;
+    }
+    
+    h1 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    h1 {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    h1 {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .first, h1, h2, #navbar {
+        text-align:center;
+    }
+}

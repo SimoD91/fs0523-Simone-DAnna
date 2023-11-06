@@ -1,0 +1,200 @@
+body {
+    background-color: #1A1A1A;
+}
+
+.logo {
+    width: 110px;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #000000, #080808, #101010, #151515, #1a1a1a);
+}
+
+#center {
+    margin: 0 auto;
+    background-color: #1A1A1A;
+    height: 100%;
+    width: 45%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.edit {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+    margin-top: 40px;
+}
+
+.edit h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.profile {
+    width: 80%;
+}
+
+.strive {
+    background-color: grey;
+    margin-top: 1px;
+    width: 90%;
+    height: 33px;
+}
+
+.strive p {
+    align-content: middle;
+    color: white;
+    padding-left: 10px;
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.818);
+}
+
+.dropdown {
+    margin-top: -10px;
+}
+
+.buttonblack {
+    background-color: black;
+}
+
+.dropdown-item:active {
+    background-color: grey
+
+}
+
+.dropdown-item:hover {
+    background-color: grey
+}
+
+button b {
+    font-size: 0.9rem;
+}
+
+.second {
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.maturity {
+    background-color: rgba(255, 255, 255, 0.17);
+    margin-top: 1px;
+    width: 55%;
+    height: 33px;
+    border-radius: 2px;
+}
+
+.maturity p {
+    align-content: middle;
+    color: white;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 0.9rem;
+}
+
+.edit {
+    font-size: 0.9rem;
+    font-weight: 200;
+    color:rgba(255, 255, 255, 0.625);
+}
+
+.form {
+    margin-top: -15px;
+}
+
+#flexCheckChecked {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    box-shadow: none;
+}
+
+.last {
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.botbuttons {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+        margin-top: 40px;
+        font-size: 1.5rem;
+        font-weight: 500;
+}
+
+.botbuttons:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ---> Responsive fixes <--- */
+
+@media screen and (max-width: 1200px){
+    h1 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .edit h1 {
+        font-size: 2rem;
+    }
+
+    .strive {
+        width: 100%;
+    }
+
+    .strive p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .profile {
+            width: 100%;
+    }
+
+    #maturity p {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #maturity p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #maturity p {
+        font-size: 0.6rem;
+}
+    .edit {
+        display: flex;
+        justify-content: start;
+        text-align: center;
+}
+.row {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #maturity p {
+        font-size: 0.5rem;
+    }
+    .edit {
+        display: flex;
+        justify-content: start;
+        text-align: center;
+    }
+    .row {
+        justify-content: center;
+}
+
+}
