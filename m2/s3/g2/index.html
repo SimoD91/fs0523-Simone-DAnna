@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Local Storage</title>
+</head>
+<body>
+
+   <h1>Local Storage</h1>
+
+    <button onclick="displayItem()">Mostra storage item</button>
+    <p id="mostra"></p>
+    <form>
+    <input type="text" placeholder="Inserisci nome" id="field">
+    <button onclick="addItem()">Aggiungi</button>
+    <button onclick="deleteItem()">Rimuovi</button>
+    </form>
+
+<script>
+
+function addItem() {
+    let salva = document.getElementById("field").value;
+    localStorage.setItem("name", salva);
+}
+
+function deleteItem() {
+    localStorage.removeItem("name");
+}
+
+function displayItem() {
+    let abc = localStorage.getItem("name");
+    document.getElementById("mostra").innerHTML = abc;
+}
+
+</script>
+</body>
+</html>
