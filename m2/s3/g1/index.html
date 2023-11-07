@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //---> Esercizio 1 <---\\
+
+    class User{
+        constructor(a,b,c,d){
+        this.firstName = a;
+        this.lastName = b;
+        this.age = c;
+        this.location = d;
+        }
+    }
+
+    class User2 extends User{}
+
+    let utente = new User ("Marco", "Rossi", 20, "Genova");
+    console.log(utente);
+
+    let utente2 = new User2 ("Giovanni", "Bianchi", 35, "Roma");
+    console.log(utente2);
+
+    confrontoAnni = function(){
+    if(utente.age > utente2.age){
+        return `${utente.firstName} è più grande di ${utente2.firstName}`;
+    }else{
+        return `${utente.firstName} è più piccolo di ${utente2.firstName}`;
+    }
+    }
+    confrontoAnni ();
+    console.log(confrontoAnni());
+
+    </script>
+</body>
+</html>
