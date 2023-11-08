@@ -1,0 +1,8 @@
+.card {
+    max-height: 1000px;
+    box-shadow:1px 2px 5px black;
+}
+
+.card-img-top {
+    max-height: 450px;
+}
