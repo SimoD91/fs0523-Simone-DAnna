@@ -1,0 +1,12 @@
+
+.logo {
+    width: 200px;
+}
+
+.navbar {
+    background: #37475A;
+}
+
+.row{
+    flex-direction:column;
+}

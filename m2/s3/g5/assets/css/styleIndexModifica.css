@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.logo {
+    width: 200px;
+}
+
+.navbar {
+    background: #37475A;
+}
+
+h1 {
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+.container :link {
+    text-decoration: none;
+}
+
+a {
+    color:white;
+}
+
+.card {
+    max-height: 600px;
+    box-shadow:1px 2px 5px black;
+    border: 1px solid rgba(0, 0, 0, 0.184);
+}
+
+.card-img-top {
+    max-height: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.222);
+}
+
+.card-brand {
+    font-size: 1.1rem;
+    font-weight: bold;
+    max-height: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
