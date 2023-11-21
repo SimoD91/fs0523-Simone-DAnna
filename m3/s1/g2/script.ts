@@ -1,32 +1,36 @@
 class SonAccount {
-    balanceInit: number = 0;
-    oneDeposit(amount: number): void {
-        this.balanceInit += amount;
-        console.log("Saldo depositato", this.balanceInit);
-    }
-    oneWithDraw(amount: number): void {
-        if (amount <= this.balanceInit) {
-            this.balanceInit -= amount;
-            console.log("Prelievo avvenuto con successo");
+    bilancioIniziale:number = 0;
+
+    deposito(somma:number):void {
+        this.bilancioIniziale += somma;
+        console.log(`Saldo depositato: ${this.bilancioIniziale}€`);
+}
+
+    prelievo(somma:number):void {
+        if(somma <= this.bilancioIniziale) {
+            this.bilancioIniziale -= somma;
+            console.log(`Prelievo avvenuto. Saldo attuale: ${this.bilancioIniziale}€`);
         }else{
-            console.log("Saldo non disponibile", amount);
+            console.log(`Richiesta prelievo non disponibile. Saldo attuale: ${this.bilancioIniziale}€`);
+
 }
 }
 }
 
 class MotherAccount extends SonAccount {
-    addInterest(): void {
-        let interest: number = this.balanceInit * 0.1;
-        this.balanceInit += interest;
+    aggiungiInteressi():void {
+        let interessi:number = this.bilancioIniziale * 0.1;
+        this.bilancioIniziale += interessi; 
+        console.log(`Saldo attuale con interessi: ${this.bilancioIniziale}€`);
 }
 }
 
-let sonAccount = new SonAccount();
-sonAccount.oneDeposit(300);
-sonAccount.oneWithDraw(270);
+let contoFiglio = new SonAccount();
+contoFiglio.deposito(220);
+contoFiglio.prelievo(250);
 
-let motherAccount = new MotherAccount();
-motherAccount.oneDeposit(290);
-motherAccount.oneWithDraw(80);
-motherAccount.addInterest();
-console.log("Credito", motherAccount.balanceInit);
+let contoMadre = new MotherAccount();
+contoMadre.deposito(290);
+contoMadre.prelievo(280);
+contoMadre.aggiungiInteressi();
+
