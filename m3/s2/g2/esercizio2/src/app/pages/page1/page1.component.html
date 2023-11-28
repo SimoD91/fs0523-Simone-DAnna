@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr>
+
+  <th>#</th>
+  <th>gusto</th>
+  <th>prezzo</th>
+  <th>disponibile</th>
+  <th>azioni</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let postsmall of post; let i = index">
+  <td>{{i + 1}}</td>
+  <td>{{post.body}}</td>
+  <td>{{post.title}}</td>
+  <td>{{post.active}}</td>
+  <td><button (click)="post.active = !post.active">Abilita/disabilita</button></td>
+  </tr>
+  </tbody>
+  </table>
