@@ -1,0 +1,6 @@
+<form>
+  <input type="text" [(ngModel)]="newPost.title" name="post">
+</form>
+<button (click)="save()">+</button>
+
+<div *ngIf="loading">Recupero Task...</div>

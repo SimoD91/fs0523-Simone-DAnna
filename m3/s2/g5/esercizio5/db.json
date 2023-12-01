@@ -1,0 +1,34 @@
+{
+  "todolist": [
+    {
+      "id": 1,
+      "title": "Fare la spesa",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Riparare la macchina",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Ripassare profondamente Angular",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Pulire casa",
+      "completed": true
+    },
+    {
+      "id": 5,
+      "title": "Rinnovare l'assicurazione",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Pagare bollette",
+      "completed": true
+    }
+  ]
+}
