@@ -1,0 +1,22 @@
+.taskcompleted {
+  margin-top: 10px;
+}
+
+.erase {
+  background-color: rgb(181, 0, 0);
+  color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+.modify {
+  background-color: rgb(255, 208, 0);
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+tr {
+  line-height: 10px;
+}/*# sourceMappingURL=completed.component.css.map */

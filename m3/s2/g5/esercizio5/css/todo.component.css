@@ -8,21 +8,17 @@
   box-shadow: 1px 1px 1px black;
 }
 
-.inputContainer input:focus {
-  border-style:none;
-}
-
 .addButton {
   margin-left: -8px;
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 1px 1px 1px black;
 }
 
 .tasktodo {
   margin-top: 10px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 svg {
   margin-left: 5px;
-}
+}/*# sourceMappingURL=todo.component.css.map */

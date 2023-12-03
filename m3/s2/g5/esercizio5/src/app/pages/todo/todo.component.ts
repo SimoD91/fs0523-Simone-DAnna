@@ -9,6 +9,7 @@ import { TodosService } from '../../todos.service';
 })
 export class TodoComponent {
 
+
   constructor(private todoSvc:TodosService){}
 
   newPost:iTodo = {
@@ -18,12 +19,45 @@ export class TodoComponent {
   };
 
   loading:boolean = false;
+  tasks: iTodo[] = [];
+  filteredTasks: iTodo[] = [];
 
-  save(){
+  ngOnInit() {
     this.loading = true;
-    this.todoSvc.create(this.newPost).then(res => {
-      this.loading = false
-    })
-  };
+    this.todoSvc.getAll().then((tasks) => {
+      this.tasks = tasks;
+      this.filterTasks();
+      this.loading = false;
+    });
+  }
 
-}
+  save() {
+    this.loading = true;
+    this.newPost.completed = false;
+    this.todoSvc.create(this.newPost).then(() => {
+      this.todoSvc.getAll().then((tasks) => {
+        this.tasks = tasks;
+        this.filterTasks();
+        this.loading = false;
+      });
+    });
+
+    this.newPost.title = '';
+  }
+
+  filterTasks() {
+    this.filteredTasks = this.tasks.filter(task => !task.completed);
+  }
+
+    completeTask(task: iTodo) {
+      this.loading = true;
+      task.completed = true;
+      this.todoSvc.update(task).then(() => {
+        this.todoSvc.getAll().then((tasks) => {
+          this.tasks = tasks;
+          this.filterTasks();
+          this.loading = false;
+        });
+      });
+    }
+  }

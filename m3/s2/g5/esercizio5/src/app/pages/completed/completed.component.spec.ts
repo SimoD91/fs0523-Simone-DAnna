@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CompletedComponent } from './completed.component';
 
 describe('CompletedComponent', () => {
@@ -11,7 +10,7 @@ describe('CompletedComponent', () => {
       declarations: [CompletedComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CompletedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

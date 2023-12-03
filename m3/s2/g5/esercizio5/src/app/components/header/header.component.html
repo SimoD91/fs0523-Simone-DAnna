@@ -1,6 +1,6 @@
 <header>
   <ul>
-    <li><a routerLink="/">Todos</a></li>
-    <li><a routerLink="/todo-completati">Completati</a></li>
+    <li class="todos" routerLinkActive="active" [class.disabled]="routeCompletatiAttiva()"><a routerLink="/">Todos</a></li>
+    <li class="completati" routerLinkActive="active"><a routerLink="/todo-completati">Completati</a></li>
   </ul>
 </header>
