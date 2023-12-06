@@ -1,0 +1,50 @@
+:host {
+  width: 100%;
+height: 100vh;
+display: block;
+
+  form {
+    background-color: white;
+    input,
+    select, textarea {
+      border: none;
+      background-color: #fff2e1;
+      &:focus,
+      &:active {
+        box-shadow: unset;
+      }
+    }
+    label[for='propic'] {
+      background-color: #a3ff87;
+      width: 70%;
+      aspect-ratio: 1/1;
+      text-align: center;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      i {
+
+        font-size: 100px;
+        color: white;
+      }
+    }
+    .form-floating>.form-control:focus~label::after {
+      background-color: #bdff87;
+
+    }
+
+    span.input-group-text {
+      background-color: #b3ff87;
+
+    }
+    i.bi-check-lg {
+      font-size: 20px;
+    }
+    button.btn {
+      background-color: #3cff00;
+      border-color: #adff87;
+    }
+  }
+}
