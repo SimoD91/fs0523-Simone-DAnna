@@ -1,3 +1,5 @@
+# DEPLOY INFORMATION: [http://minimal-cloud.web.app]
+
 # Auth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
