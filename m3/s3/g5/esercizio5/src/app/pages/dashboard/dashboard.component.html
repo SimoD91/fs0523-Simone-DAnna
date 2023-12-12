@@ -1,0 +1,36 @@
+<div class="container2 my-5">
+    <div>
+      <h2 *ngIf="userName">Benvenuto su Minimal Cloud, {{ userName }}</h2>
+    </div>
+    <div>
+      <h3 class="text-center my-4">Cerca le previsioni del tempo:</h3>
+      <form [formGroup]="weatherSearchForm" (ngSubmit)="apiSend(weatherSearchForm.value)">
+        <div class="form-group">
+          <input class="form-control" type="text" id="weatherLocation" aria-describedby="weatherLocation" placeholder="Cerca la tua città" formControlName="location"/>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-dark btn-md my-3">Mostra le previsioni</button>
+        </div>
+      </form>
+    </div>
+</div>
+<div>
+  <div [ngClass]="{'hide': !showTitle}">
+    <h3 class="text-center my-4">Previsioni da oggi a 5 giorni:</h3>
+  </div>
+  <div class="row justify-content-center">
+    <div *ngFor="let weatherItem of this.weatherData?.list.slice(0, 5); let i = index" class="col-lg-2 mx-3 my-3">
+      <div class="card">
+        <img src="../../../assets/icons/city2.png" class="card-img-top" alt="icon-city">
+        <div class="card-body">
+          <p class="card-text text-center">Località: {{ weatherData?.city.name }}, {{ weatherData?.city.country }}</p>
+          <p class="card-text text-center">Condizioni meteo: {{ weatherItem.weather[0].description }}</p>
+          <p class="card-text text-center">Temperatura: {{ arrotonda(weatherItem.main.temp -273.15) }} °C</p>
+          <p class="card-text text-center">Temperatura percepita: {{ arrotonda(weatherItem.main.feels_like -273.15) }} °C</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

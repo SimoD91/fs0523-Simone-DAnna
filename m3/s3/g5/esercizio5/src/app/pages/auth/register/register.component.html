@@ -1,0 +1,22 @@
+<div class="container my-5">
+<h5>Registrazione</h5>
+<form>
+  <div class="form-group">
+    <input [(ngModel)]="registerData.nome" name="nome" type="text" class="form-control" placeholder="Nome" required>
+    <div *ngIf="formSubmitted && !registerData.nome" class="error-message text-danger">Scrivi il tuo nome</div>
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="registerData.email" name="email" type="email" class="form-control" placeholder="Email" required>
+    <div *ngIf="formSubmitted && !registerData.email" class="error-message text-danger">Scrivi la tua email</div>
+  </div>
+  <div class="form-group">
+    <input [(ngModel)]="registerData.password" name="password" type="password" class="form-control" placeholder="Password" required>
+    <div *ngIf="formSubmitted && !registerData.password" class="error-message text-danger">Scrivi la tua password</div>
+  </div>
+  <button (click)="save()" class="btn btn-dark my-3 mx-1">Registrati</button>
+</form>
+
+<div *ngIf="registrationSuccess" class="success-message">Registrazione effettuata!</div>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>
+

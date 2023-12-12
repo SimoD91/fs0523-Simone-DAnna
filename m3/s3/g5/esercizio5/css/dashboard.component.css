@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container2 {
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  box-shadow: 1px 1px 3px black;
+  padding: 20px;
+}
+
+.btn {
+  box-shadow: 1px 1px 8px black;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.368);
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.368);
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(88, 88, 88);
+  font-style: italic;
+}
+
+.hide {
+  display: none;
+}
+
+.card {
+  width: 16rem;
+  box-shadow: 1px 1px 3px black;
+}
+
+img {
+  padding: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.266);
+}
+
+.card-text {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.266);
+  padding-bottom: 10px;
+}
+
+.row {
+  width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .container2 {
+    width: 90%;
+    height: 380px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .card {
+    margin-left: 35px;
+  }
+}/*# sourceMappingURL=dashboard.component.css.map */
